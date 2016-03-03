@@ -58,8 +58,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.umeng:fb:latest.integration'
-    compile 'com.umeng.analytics:analytics:latest.integration'
     compile project(':library')
     compile project(':library_youku')
 }

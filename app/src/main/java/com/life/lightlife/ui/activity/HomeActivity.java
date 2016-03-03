@@ -45,8 +45,6 @@ import com.life.lightlife.presenter.impl.HomePresenterImpl;
 import com.life.lightlife.ui.activity.base.BaseActivity;
 import com.life.lightlife.ui.adpter.VPFragmentAdapter;
 import com.life.lightlife.view.HomeView;
-import com.umeng.fb.FeedbackAgent;
-import com.umeng.fb.fragment.FeedbackFragment;
 
 import java.util.List;
 
@@ -82,7 +80,6 @@ public class HomeActivity extends BaseActivity implements HomeView {
     private ListViewDataAdapter<NavigationEntity> mNavListAdapter = null;
 
     private Presenter mHomePresenter = null;
-    private FeedbackAgent mFeedbackAgent = null;
 
     @Override
     protected int getContentViewLayoutID() {
@@ -101,11 +98,6 @@ public class HomeActivity extends BaseActivity implements HomeView {
 
     @Override
     protected void initViewsAndEvents() {
-        mFeedbackAgent = new FeedbackAgent(this);
-        mFeedbackAgent.sync();
-        mFeedbackAgent.closeFeedbackPush();
-        mFeedbackAgent.closeAudioFeedback();
-        mFeedbackAgent.setWelcomeInfo(getResources().getString(R.string.feedback_welcome_info));
 
         mHomePresenter = new HomePresenterImpl(this, this);
         mHomePresenter.initialized();
@@ -254,9 +246,6 @@ public class HomeActivity extends BaseActivity implements HomeView {
                 readyGo(AboutUsActivity.class);
                 break;
             case R.id.action_feedback:
-                Bundle extras = new Bundle();
-                extras.putString(FeedbackFragment.BUNDLE_KEY_CONVERSATION_ID, mFeedbackAgent.getDefaultConversation().getId());
-                readyGo(FeedBackActivity.class, extras);
                 break;
         }
         return super.onOptionsItemSelected(item);
