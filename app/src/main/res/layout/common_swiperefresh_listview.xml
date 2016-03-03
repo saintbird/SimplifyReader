@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.github.obsessive.simplifyreader.widgets.LoadMoreListView
+        <com.life.lightlife.widgets.LoadMoreListView
             android:id="@+id/common_swipe_refresh_list_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
