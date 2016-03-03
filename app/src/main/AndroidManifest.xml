@@ -56,10 +56,10 @@
         <!-- umeng ID-->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="55af0b68e0f55a0e9e003fba"/>
+            android:value="56d79e20e0f55a6ac200214a"/>
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="Obsessive_Simplify_Reader"/>
+            android:value="Public01"/>
 
         <activity
             android:name=".ui.activity.SplashActivity"
