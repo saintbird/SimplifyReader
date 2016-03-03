@@ -102,16 +102,6 @@
             android:launchMode="singleTask"/>
 
         <activity
-            android:name=".ui.activity.qrcode.CaptureActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"/>
-
-        <activity
-            android:name=".ui.activity.qrcode.ResultActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"/>
-
-        <activity
             android:name=".ui.activity.picker.CommonImagePickerListActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"/>

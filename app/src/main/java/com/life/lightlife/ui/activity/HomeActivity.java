@@ -43,7 +43,6 @@ import com.life.lightlife.bean.NavigationEntity;
 import com.life.lightlife.presenter.Presenter;
 import com.life.lightlife.presenter.impl.HomePresenterImpl;
 import com.life.lightlife.ui.activity.base.BaseActivity;
-import com.life.lightlife.ui.activity.qrcode.CaptureActivity;
 import com.life.lightlife.ui.adpter.VPFragmentAdapter;
 import com.life.lightlife.view.HomeView;
 import com.umeng.fb.FeedbackAgent;
@@ -251,9 +250,6 @@ public class HomeActivity extends BaseActivity implements HomeView {
         }
 
         switch (item.getItemId()) {
-            case R.id.action_capture:
-                readyGo(CaptureActivity.class);
-                break;
             case R.id.action_about_us:
                 readyGo(AboutUsActivity.class);
                 break;

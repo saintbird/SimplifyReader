@@ -40,7 +40,6 @@ import com.github.obsessive.library.utils.TLog;
 import com.life.lightlife.R;
 import com.life.lightlife.bean.AboutListEntity;
 import com.life.lightlife.ui.activity.base.BaseSwipeBackActivity;
-import com.life.lightlife.ui.activity.qrcode.decode.DecodeUtils;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -165,12 +164,12 @@ public class AboutUsActivity extends BaseSwipeBackActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                DecodeUtils decodeUtils = new DecodeUtils(DecodeUtils.DECODE_DATA_MODE_ALL);
+                /*DecodeUtils decodeUtils = new DecodeUtils(DecodeUtils.DECODE_DATA_MODE_ALL);
                 String url = decodeUtils.decodeWithZxing(BitmapFactory.decodeResource(getResources(), R.drawable.pay_qrcode));
                 if (!CommonUtils.isEmpty(url)) {
                     TLog.d(TAG_LOG, url);
                     intent.setData(Uri.parse(url));
-                }
+                }*/
                 startActivity(intent);
             }
         });
