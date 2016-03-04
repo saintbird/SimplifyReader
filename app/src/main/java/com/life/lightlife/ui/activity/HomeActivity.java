@@ -230,24 +230,13 @@ public class HomeActivity extends BaseActivity implements HomeView {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_home, menu);
-        return true;
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (mActionBarDrawerToggle != null && mActionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
-        switch (item.getItemId()) {
-            case R.id.action_about_us:
-                readyGo(AboutUsActivity.class);
-                break;
-            case R.id.action_feedback:
-                break;
-        }
+        //readyGo(AboutUsActivity.class);
+
         return super.onOptionsItemSelected(item);
     }
 

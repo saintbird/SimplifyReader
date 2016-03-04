@@ -1,49 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License”);
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~    http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
 <resources>
-
-    <string name="app_name">LightLife</string>
+    <string name="app_name">轻生活</string>
     <string name="drawer_open">DrawerOpen</string>
     <string name="drawer_close">DrawerClose</string>
-    <string name="menu_capture">Scan QR Code</string>
-    <string name="menu_about_us">About us</string>
-    <string name="menu_feedback">Feedback</string>
+    <string name="menu_about_us">关于我们</string>
     <string name="splash_copyright">Copyright &#169; 2015 SimplifyReader All Rights Reserved\nPowered by Obsessive and Chris</string>
-    <string name="splash_slogan">Go through the every bit of life</string>
+    <string name="splash_slogan">看尽生活中的点滴</string>
     <string name="splash_version">V %1$s</string>
-    <string name="double_click_exit">Press again to exit</string>
-    <string name="common_load_more_end">No more content</string>
-    <string name="feedback_welcome_info">Thanks for your feedback, I will reply as soon as possible</string>
+    <string name="double_click_exit">再按一次退出</string>
+    <string name="common_load_more_end">没有更多了</string>
+    <string name="feedback_welcome_info">感谢您提出反馈意见,我会尽快回复</string>
 
     <!-- Video Play-->
-    <string name="player_title">Media Player</string>
-    <string name="player_view_count">Times watched\t</string>
-    <string name="player_favor_count">Favorites\t</string>
-    <string name="player_comment_count">Comments\t</string>
-    <string name="player_publish">Posted on\t</string>
-    <string name="player_tags">Tags</string>
+    <string name="player_title">视频播放</string>
+    <string name="player_view_count">观看次数\t</string>
+    <string name="player_favor_count">收藏次数\t</string>
+    <string name="player_comment_count">评论次数\t</string>
+    <string name="player_publish">发布于\t</string>
+    <string name="player_tags">标签</string>
 
-    <string name="btn_history">History</string>
-    <string name="btn_picture">Picture</string>
-    <string name="btn_light">Light</string>
-    <string name="btn_ok">Ok</string>
+    <string name="btn_history">历史</string>
+    <string name="btn_picture">图片</string>
+    <string name="btn_light">灯光</string>
+    <string name="btn_ok">确定</string>
 
-    <string name="title_image_picker">Local photo album</string>
-    <string name="tb_munion_tip_download_prefix">Downloading:</string>
-
+    <string name="title_image_picker">本地相册</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="error_image_load_fail">图片下载失败</string>
+    <string name="error_news_detail_url_null">获取新闻URL失败</string>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="umeng_common_icon">图标</string>
 </resources>

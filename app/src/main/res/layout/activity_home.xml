@@ -47,13 +47,10 @@
             <ImageView
                 android:id="@+id/home_navigation_top_image"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/home_menu_top_image_height"
-                android:layout_alignParentTop="true"
-                android:clickable="true"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/banner"/>
+                android:layout_height="wrap_content"
+                android:background="@color/sr_color_primary"
+                android:paddingBottom="10dp"
+                android:src="@drawable/pay_qrcode"/>
 
             <ListView
                 android:id="@+id/home_navigation_list"
