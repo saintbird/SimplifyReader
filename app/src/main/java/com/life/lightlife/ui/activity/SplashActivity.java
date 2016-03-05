@@ -21,7 +21,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.github.obsessive.library.eventbus.EventCenter;
 import com.github.obsessive.library.netstatus.NetUtils;
@@ -45,11 +44,6 @@ public class SplashActivity extends BaseActivity implements SplashView {
     @InjectView(R.id.splash_image)
     ImageView mSplashImage;
 
-    @InjectView(R.id.splash_version_name)
-    TextView mVersionName;
-
-    @InjectView(R.id.splash_copyright)
-    TextView mCopyright;
 
     private Presenter mSplashPresenter = null;
 
@@ -121,8 +115,6 @@ public class SplashActivity extends BaseActivity implements SplashView {
 
     @Override
     public void initializeViews(String versionName, String copyright, int backgroundResId) {
-        mCopyright.setText(copyright);
-        mVersionName.setText(versionName);
         mSplashImage.setImageResource(backgroundResId);
     }
 

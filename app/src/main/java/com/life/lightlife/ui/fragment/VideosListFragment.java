@@ -139,7 +139,6 @@ public class VideosListFragment extends BaseFragment implements VideosListView, 
                     @Override
                     public View createView(LayoutInflater layoutInflater) {
                         View convertView = layoutInflater.inflate(R.layout.list_item_videos_card, null);
-
                         mItemTitle = ButterKnife.findById(convertView, R.id.list_item_videos_card_title);
                         mItemImage = ButterKnife.findById(convertView, R.id.list_item_videos_card_image);
                         mItemPlay = ButterKnife.findById(convertView, R.id.list_item_videos_card_play);
