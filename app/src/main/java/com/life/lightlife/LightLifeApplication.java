@@ -16,6 +16,7 @@
 
 package com.life.lightlife;
 
+import android.app.Application;
 import com.github.obsessive.library.base.BaseAppManager;
 import com.life.lightlife.api.ApiConstants;
 import com.life.lightlife.utils.ImageLoaderHelper;
@@ -23,7 +24,6 @@ import com.life.lightlife.utils.VolleyHelper;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
-import com.youku.player.YoukuPlayerBaseApplication;
 
 /**
  * Author:  Tau.Chen
@@ -31,7 +31,7 @@ import com.youku.player.YoukuPlayerBaseApplication;
  * Date:    2015/3/9.
  * Description: App Application Context
  */
-public class LightLifeApplication extends YoukuPlayerBaseApplication {
+public class LightLifeApplication extends Application {
 
     @Override
     public void onCreate() {
@@ -43,11 +43,6 @@ public class LightLifeApplication extends YoukuPlayerBaseApplication {
 
         VolleyHelper.getInstance().init(this);
         ImageLoader.getInstance().init(ImageLoaderHelper.getInstance(this).getImageLoaderConfiguration(ApiConstants.Paths.IMAGE_LOADER_CACHE_PATH));
-    }
-
-    @Override
-    public String configDownloadPath() {
-        return null;
     }
 
     @Override

@@ -91,12 +91,6 @@
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".ui.activity.PlayerActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="true"
-            android:launchMode="singleTask"/>
-
-        <activity
             android:name=".ui.activity.picker.CommonImagePickerListActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"/>

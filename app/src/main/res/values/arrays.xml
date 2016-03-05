@@ -18,7 +18,6 @@
 
     <array name="navigation_list">
         <item>轻图片</item>
-        <item>轻视频</item>
         <item>轻音乐</item>
     </array>
 
@@ -49,13 +48,6 @@
         <item>汽车</item>
         <item>摄影</item>
         <item>美食</item>
-    </array>
-
-    <array name="videos_category_list">
-        <item>热门</item>
-        <item>搞笑</item>
-        <item>动漫</item>
-        <item>综艺</item>
     </array>
 
     <array name="about_list">
