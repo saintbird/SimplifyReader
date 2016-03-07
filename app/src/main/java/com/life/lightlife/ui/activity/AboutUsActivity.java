@@ -195,7 +195,7 @@ public class AboutUsActivity extends BaseSwipeBackActivity {
 
                         readyGo(BaseWebActivity.class, extras);
                         break;
-                    case 3:
+                    /*case 3:
                         // project description
                         extras.putString(BaseWebActivity.BUNDLE_KEY_TITLE, mAboutArray[3]);
                         extras.putBoolean(BaseWebActivity.BUNDLE_KEY_SHOW_BOTTOM_BAR, false);
@@ -210,7 +210,7 @@ public class AboutUsActivity extends BaseSwipeBackActivity {
                         extras.putString(BaseWebActivity.BUNDLE_KEY_URL, "file:///android_asset/open_source.html");
 
                         readyGo(BaseWebActivity.class, extras);
-                        break;
+                        break;*/
 
                 }
             }
