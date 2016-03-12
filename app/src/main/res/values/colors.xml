@@ -39,4 +39,5 @@
     <color name="player_container_bg">#FFDDDDDD</color>
     <color name="player_gray">#ff888888</color>
 
+    <color name="primary">#03A9F4</color>
 </resources>
