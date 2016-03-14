@@ -17,14 +17,8 @@
 package com.life.lightlife;
 
 import android.app.Application;
-import android.content.Context;
-
 import com.github.obsessive.library.base.BaseAppManager;
 import com.life.lightlife.api.ApiConstants;
-import com.life.lightlife.greendao.DaoMaster;
-import com.life.lightlife.greendao.DaoSession;
-import com.life.lightlife.jiandan.cache.BaseCache;
-import com.life.lightlife.jiandan.view.imageloader.ImageLoadProxy;
 import com.life.lightlife.utils.ImageLoaderHelper;
 import com.life.lightlife.utils.VolleyHelper;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -39,45 +33,16 @@ import com.umeng.update.UmengUpdateAgent;
  */
 public class LightLifeApplication extends Application {
 
-    private static Context mContext;
-    private static DaoMaster daoMaster;
-    private static DaoSession daoSession;
-
     @Override
     public void onCreate() {
         super.onCreate();
-        mContext = this;
-
         MobclickAgent.setDebugMode(true);
         MobclickAgent.updateOnlineConfig(this);
         MobclickAgent.openActivityDurationTrack(false);
         UmengUpdateAgent.update(this);
 
         VolleyHelper.getInstance().init(this);
-        ImageLoadProxy.initImageLoader(this);
         ImageLoader.getInstance().init(ImageLoaderHelper.getInstance(this).getImageLoaderConfiguration(ApiConstants.Paths.IMAGE_LOADER_CACHE_PATH));
-    }
-
-    public static Context getContext() {
-        return mContext;
-    }
-
-    public static DaoMaster getDaoMaster(Context context) {
-        if (daoMaster == null) {
-            DaoMaster.OpenHelper helper = new DaoMaster.DevOpenHelper(context, BaseCache.DB_NAME, null);
-            daoMaster = new DaoMaster(helper.getWritableDatabase());
-        }
-        return daoMaster;
-    }
-
-    public static DaoSession getDaoSession(Context context) {
-        if (daoSession == null) {
-            if (daoMaster == null) {
-                daoMaster = getDaoMaster(context);
-            }
-            daoSession = daoMaster.newSession();
-        }
-        return daoSession;
     }
 
     @Override
