@@ -28,8 +28,6 @@ public class ApiConstants {
 
     public static final class Urls {
         public static final String BAIDU_IMAGES_URLS = "http://image.baidu.com/data/imgs";
-        public static final String YOUKU_VIDEOS_URLS = "https://openapi.youku.com/v2/searches/video/by_keyword.json";
-        public static final String YOUKU_USER_URLS = "https://openapi.youku.com/v2/users/show.json";
         public static final String DOUBAN_PLAY_LIST_URLS = "http://www.douban.com/j/app/radio/people";
         public static final String URL_FRESH_NEWS = "http://jandan.net/?oxwlxojflwblxbsapi=get_recent_posts&include=url,date,tags,author,title,comment_count,custom_fields&custom_fields=thumb_c,views&dev=1&page=";
         public static final String URL_FRESH_NEWS_DETAIL = "http://i.jandan.net/?oxwlxojflwblxbsapi=get_post&include=content&id=";

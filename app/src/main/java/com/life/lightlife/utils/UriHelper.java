@@ -91,32 +91,6 @@ public class UriHelper {
         return ApiConstants.Urls.URL_FRESH_NEWS_DETAIL + id;
     }
 
-    public String getVideosListUrl(String category, int pageNum) {
-        StringBuffer sb = new StringBuffer();
-        sb.append(ApiConstants.Urls.YOUKU_VIDEOS_URLS);
-        sb.append("?keyword=");
-        try {
-            sb.append(URLEncoder.encode(category, "UTF-8"));
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        sb.append("&page=");
-        sb.append(pageNum);
-        sb.append("&count=");
-        sb.append(PAGE_LIMIT);
-        sb.append("&public_type=all&paid=0&period=today&orderby=published&client_id=6ecd6970268b4c53");
-        return sb.toString().trim();
-    }
-
-    public String getVideoUserUrl(int userId) {
-        StringBuffer sb = new StringBuffer();
-        sb.append(ApiConstants.Urls.YOUKU_USER_URLS);
-        sb.append("?user_id=");
-        sb.append(userId);
-        sb.append("&client_id=6ecd6970268b4c53");
-        return sb.toString().trim();
-    }
-
     public String getDoubanPlayListUrl(String channelId) {
         StringBuffer sb = new StringBuffer();
         sb.append(ApiConstants.Urls.DOUBAN_PLAY_LIST_URLS);
