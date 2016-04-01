@@ -17,6 +17,8 @@
 package com.life.lightlife;
 
 import android.app.Application;
+import android.content.Context;
+
 import com.github.obsessive.library.base.BaseAppManager;
 import com.life.lightlife.api.ApiConstants;
 import com.life.lightlife.utils.ImageLoaderHelper;

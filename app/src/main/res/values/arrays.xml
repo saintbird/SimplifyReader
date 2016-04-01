@@ -19,6 +19,7 @@
     <array name="navigation_list">
         <item>轻图片</item>
         <item>轻音乐</item>
+        <item>轻阅读</item>
     </array>
 
     <array name="news_category_list">

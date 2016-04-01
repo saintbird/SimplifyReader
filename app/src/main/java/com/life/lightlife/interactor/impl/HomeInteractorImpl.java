@@ -24,6 +24,7 @@ import com.life.lightlife.bean.NavigationEntity;
 import com.life.lightlife.interactor.HomeInteractor;
 import com.life.lightlife.ui.fragment.ImagesContainerFragment;
 import com.life.lightlife.ui.fragment.MusicsFragment;
+import com.life.lightlife.ui.fragment.NewsContainerFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +42,7 @@ public class HomeInteractorImpl implements HomeInteractor {
         List<BaseLazyFragment> fragments = new ArrayList<>();
         fragments.add(new ImagesContainerFragment());
         fragments.add(new MusicsFragment());
+        fragments.add(new NewsContainerFragment());
 
         return fragments;
     }
@@ -51,6 +53,7 @@ public class HomeInteractorImpl implements HomeInteractor {
         String[] navigationArrays = context.getResources().getStringArray(R.array.navigation_list);
         navigationEntities.add(new NavigationEntity("", navigationArrays[0], R.drawable.ic_picture));
         navigationEntities.add(new NavigationEntity("", navigationArrays[1], R.drawable.ic_music));
+        navigationEntities.add(new NavigationEntity("", navigationArrays[2], R.drawable.ic_news));
         return navigationEntities;
     }
 }

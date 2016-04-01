@@ -86,6 +86,13 @@
             android:theme="@style/AppTheme.ImagesDetail"/>
 
         <activity
+            android:name=".ui.activity.NewsDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoneTranslucent"/>
+
+
+        <activity
             android:name=".ui.activity.AboutUsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"/>

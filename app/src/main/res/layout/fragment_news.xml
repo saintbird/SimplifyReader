@@ -17,13 +17,13 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <com.github.obsessive.library.smartlayout.SmartTabLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/fragment_news_tab_smart"
+        android:id="@+id/fragment_videos_tab_smart"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/sr_color_primary"
@@ -36,11 +36,12 @@
         app:stl_underlineColor="@android:color/transparent"
         app:stl_defaultTabTextColor="@android:color/white"
         app:stl_defaultTabTextSize="@dimen/big_small_text"
+        app:stl_distributeEvenly="true"
         app:stl_defaultTabTextHorizontalPadding="@dimen/fragment_common_list_smart_tab_padding"/>
 
     <com.github.obsessive.library.widgets.XViewPager
         android:layout_width="match_parent"
-        android:id="@+id/fragment_news_pager"
+        android:id="@+id/fragment_videos_pager"
         android:layout_height="0dp"
         android:layout_weight="1"/>
 </LinearLayout>

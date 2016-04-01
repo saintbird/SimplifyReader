@@ -83,6 +83,14 @@ public class UriHelper {
         return sb.toString();
     }
 
+    public static String getNewsListUrl(int page) {
+        return ApiConstants.Urls.URL_FRESH_NEWS + page;
+    }
+
+    public static String getNewsDetailUrl(String id) {
+        return ApiConstants.Urls.URL_FRESH_NEWS_DETAIL + id;
+    }
+
     public String getVideosListUrl(String category, int pageNum) {
         StringBuffer sb = new StringBuffer();
         sb.append(ApiConstants.Urls.YOUKU_VIDEOS_URLS);
